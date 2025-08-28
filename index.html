@@ -546,6 +546,30 @@
           );
         }
 
+        // Add hover effects to buttons
+        document.querySelectorAll('button').forEach(btn => {
+          if (btn.textContent.includes('Copy')) {
+            btn.style.transition = 'all 0.2s ease';
+            btn.addEventListener('mouseenter', () => {
+              btn.style.backgroundColor = '#f3f4f6';
+              btn.style.borderColor = '#d1d5db';
+            });
+            btn.addEventListener('mouseleave', () => {
+              btn.style.backgroundColor = '';
+              btn.style.borderColor = '';
+            });
+          }
+          if (btn.textContent.includes('Call')) {
+            btn.style.transition = 'all 0.2s ease';
+            btn.addEventListener('mouseenter', () => {
+              btn.style.backgroundColor = '#6b7280';
+            });
+            btn.addEventListener('mouseleave', () => {
+              btn.style.backgroundColor = '#10b981';
+            });
+          }
+        });
+
         document.querySelectorAll("button").forEach((btn) => {
           if (btn.textContent.includes("Copy")) {
             btn.addEventListener("click", function () {
