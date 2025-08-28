@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div class="bg-white shadow-sm px-6 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="Emergency Service" class="w-10 h-10">
+            <span class="font-semibold text-gray-800 text-lg hidden sm:inline">Emergency Service</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="text-base font-medium" id="heartCount">0</span>
+            <img src="assets/heart.png" alt="Heart" class="w-7 h-7">
+            <div class="flex items-center gap-2">
+                <span class="text-base font-medium" id="coinCount">100</span>
+                <img src="assets/coin.png" alt="Coin" class="w-5 h-5">
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium" id="copyCount">2 Copy</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div style="background: linear-gradient(to right, #013223, #006747, #013223);" class="text-white text-center py-16">
+        <div class="w-24 h-24 mx-auto mb-8 flex items-center justify-center">
+            <img src="assets/logo-dark.png" alt="Emergency Services Logo" class="w-24 h-24 rounded-full shadow-xl">
+        </div>
+        <h1 class="text-3xl font-bold mb-6">জরুরি সেবা ডিরেক্টরি</h1>
+        <p class="text-base opacity-90 max-w-2xl mx-auto px-4">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+    </div>
+
+    <!-- Main Content -->
+    <div style="background-color: rgba(65, 255, 107, 0.1);" class="p-6 flex flex-col lg:flex-row gap-6">
+        <!-- Emergency Services Grid -->
+        <div class="flex-1">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- National Emergency -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/emergency.png" alt="Emergency" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">জাতীয় জরুরি সেবা</h3>
+                <p class="text-sm text-gray-400 mb-3">National Emergency</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">999</div>
+                <div class="text-sm text-gray-400 mb-6">জাতীয়</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50 flex items-center justify-center gap-2"><img src="assets/copy-icon.svg" alt="Copy" class="w-4 h-4"> Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Police -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/police.png" alt="Police" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">পুলিশ</h3>
+                <p class="text-sm text-gray-400 mb-3">Police</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">999</div>
+                <div class="text-sm text-gray-400 mb-6">পুলিশ</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50 flex items-center justify-center gap-2"><img src="assets/copy-icon.svg" alt="Copy" class="w-4 h-4"> Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Fire Service -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/fire-service.png" alt="Fire Service" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">ফায়ার সার্ভিস</h3>
+                <p class="text-sm text-gray-400 mb-3">Fire Service</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">999</div>
+                <div class="text-sm text-gray-400 mb-6">ফায়ার</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50 flex items-center justify-center gap-2"><img src="assets/copy-icon.svg" alt="Copy" class="w-4 h-4"> Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Ambulance -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/ambulance.png" alt="Ambulance" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">অ্যাম্বুলেন্স</h3>
+                <p class="text-sm text-gray-400 mb-3">Ambulance</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">1994-999999</div>
+                <div class="text-sm text-gray-400 mb-6">স্বাস্থ্য</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50 flex items-center justify-center gap-2"><img src="assets/copy-icon.svg" alt="Copy" class="w-4 h-4"> Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Women & Child Helpline -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/emergency.png" alt="Women & Child Helpline" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">নারী ও শিশু সহায়তা</h3>
+                <p class="text-sm text-gray-400 mb-3">Women & Child Helpline</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">109</div>
+                <div class="text-sm text-gray-400 mb-6">সহায়তা</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50 flex items-center justify-center gap-2"><img src="assets/copy-icon.svg" alt="Copy" class="w-4 h-4"> Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Anti-Corruption -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/emergency.png" alt="Anti-Corruption" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">দুদক</h3>
+                <p class="text-sm text-gray-400 mb-3">Anti-Corruption</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">106</div>
+                <div class="text-sm text-gray-400 mb-6">দুর্নীতি</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50">📋 Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Electricity Outage -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/emergency.png" alt="Electricity Outage" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">বিদ্যুৎ বিভাগ</h3>
+                <p class="text-sm text-gray-400 mb-3">Electricity Outage</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">16216</div>
+                <div class="text-sm text-gray-400 mb-6">বিদ্যুৎ</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50">📋 Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- BRAC -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/brac.png" alt="BRAC" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">ব্র্যাক</h3>
+                <p class="text-sm text-gray-400 mb-3">BRAC</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">16445</div>
+                <div class="text-sm text-gray-400 mb-6">এনজিও</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50">📋 Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Bangladesh Railway -->
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                        <img src="assets/Bangladesh-Railway.png" alt="Bangladesh Railway" class="w-8 h-8">
+                    </div>
+                    <button class="text-gray-300 hover:text-red-500 text-xl">♡</button>
+                </div>
+                <h3 class="font-bold text-lg mb-2">বাংলাদেশ রেলওয়ে</h3>
+                <p class="text-sm text-gray-400 mb-3">Bangladesh Railway</p>
+                <div class="text-3xl font-bold mb-4 text-gray-900">163</div>
+                <div class="text-sm text-gray-400 mb-6">পরিবহন</div>
+                <div class="flex gap-3">
+                    <button class="flex-1 border border-gray-200 text-gray-600 py-3 px-4 rounded-xl text-sm font-medium hover:bg-gray-50">📋 Copy</button>
+                    <button class="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl text-sm font-medium">📞 Call</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Call History Sidebar -->
+        <div class="w-full lg:w-80">
+            <div class="bg-white rounded-xl p-6 shadow-md h-full">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl">🕐</span>
+                        <span class="font-bold text-lg">Call History</span>
+                    </div>
+                    <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium" id="clearHistory">Clear</button>
+                </div>
+                
+                <div class="space-y-4 h-full overflow-y-auto">
+                    <div style="background-color: #FAFAFA;" class="flex items-center justify-between py-3 px-4 rounded-lg">
+                        <div>
+                            <div class="font-semibold text-sm text-gray-900">জাতীয় জরুরি সেবা</div>
+                            <div class="text-xs text-gray-500 mt-1">999</div>
+                        </div>
+                        <div class="text-xs text-gray-400 font-medium">11:36:58 AM</div>
+                    </div>
+                    
+                    <div style="background-color: #FAFAFA;" class="flex items-center justify-between py-3 px-4 rounded-lg">
+                        <div>
+                            <div class="font-semibold text-sm text-gray-900">অ্যাম্বুলেন্স</div>
+                            <div class="text-xs text-gray-500 mt-1">1994-999999</div>
+                        </div>
+                        <div class="text-xs text-gray-400 font-medium">11:36:58 AM</div>
+                    </div>
+                    
+                    <div style="background-color: #FAFAFA;" class="flex items-center justify-between py-3 px-4 rounded-lg">
+                        <div>
+                            <div class="font-semibold text-sm text-gray-900">পুলিশ</div>
+                            <div class="text-xs text-gray-500 mt-1">999</div>
+                        </div>
+                        <div class="text-xs text-gray-400 font-medium">11:36:58 AM</div>
+                    </div>
+                    
+                    <div style="background-color: #FAFAFA;" class="flex items-center justify-between py-3 px-4 rounded-lg">
+                        <div>
+                            <div class="font-semibold text-sm text-gray-900">জাতীয় জরুরি সেবা</div>
+                            <div class="text-xs text-gray-500 mt-1">999</div>
+                        </div>
+                        <div class="text-xs text-gray-400 font-medium">11:36:58 AM</div>
+                    </div>
+                    
+                    <div style="background-color: #FAFAFA;" class="flex items-center justify-between py-3 px-4 rounded-lg">
+                        <div>
+                            <div class="font-semibold text-sm text-gray-900">জাতীয় জরুরি সেবা</div>
+                            <div class="text-xs text-gray-500 mt-1">999</div>
+                        </div>
+                        <div class="text-xs text-gray-400 font-medium">11:36:58 AM</div>
+                    </div>
+                    
+                    <div style="background-color: #FAFAFA;" class="flex items-center justify-between py-3 px-4 rounded-lg">
+                        <div>
+                            <div class="font-semibold text-sm text-gray-900">জাতীয় জরুরি সেবা</div>
+                            <div class="text-xs text-gray-500 mt-1">999</div>
+                        </div>
+                        <div class="text-xs text-gray-400 font-medium">11:36:58 AM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const callHistoryContainer = document.querySelector('.space-y-4');
+            const clearButton = document.getElementById('clearHistory');
+            
+            clearButton.addEventListener('click', function() {
+                callHistoryContainer.innerHTML = '';
+            });
+            
+            function addToCallHistory(serviceName, phoneNumber) {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('en-US', { hour12: true });
+                
+                const historyItem = document.createElement('div');
+                historyItem.style.backgroundColor = '#FAFAFA';
+                historyItem.className = 'flex items-center justify-between py-3 px-4 rounded-lg';
+                historyItem.innerHTML = `
+                    <div>
+                        <div class="font-semibold text-sm text-gray-900">${serviceName}</div>
+                        <div class="text-xs text-gray-500 mt-1">${phoneNumber}</div>
+                    </div>
+                    <div class="text-xs text-gray-400 font-medium">${timeString}</div>
+                `;
+                
+                callHistoryContainer.insertBefore(historyItem, callHistoryContainer.firstChild);
+            }
+            
+            document.querySelectorAll('button').forEach(btn => {
+                if (btn.textContent.includes('Copy')) {
+                    btn.addEventListener('click', function() {
+                        const phoneNumber = this.closest('.bg-white').querySelector('.text-3xl').textContent;
+                        navigator.clipboard.writeText(phoneNumber);
+                        alert('Phone number copied!');
+                    });
+                }
+                
+                if (btn.textContent.includes('Call')) {
+                    btn.addEventListener('click', function() {
+                        const coinCountElement = document.getElementById('coinCount');
+                        let currentCoins = parseInt(coinCountElement.textContent);
+                        
+                        if (currentCoins >= 20) {
+                            const card = this.closest('.bg-white');
+                            const phoneNumber = card.querySelector('.text-3xl').textContent;
+                            const serviceName = card.querySelector('h3').textContent;
+                            
+                            // Deduct 20 coins
+                            coinCountElement.textContent = currentCoins - 20;
+                            addToCallHistory(serviceName, phoneNumber);
+                            alert('Calling ' + serviceName + ' at ' + phoneNumber);
+                        } else {
+                            alert('Not enough coins! You need 20 coins to call.');
+                        }
+                    });
+                }
+                
+                // Heart functionality
+                if (btn.textContent.includes('♡')) {
+                    btn.addEventListener('click', function() {
+                        const heartCountElement = document.getElementById('heartCount');
+                        let currentHearts = parseInt(heartCountElement.textContent);
+                        heartCountElement.textContent = currentHearts + 1;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
