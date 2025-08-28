@@ -1,6 +1,5 @@
-# JavaScript DOM - Siam Bhai's Noob Guide 😅
+# JavaScript DOM -   MY Noob Guide 😅
 
-Yo! So you're trying to learn DOM manipulation? Bro, I feel you. I was such a noob when I started. Let me share what I learned the hard way so you don't have to suffer like me lol.
 
 ## How to Grab Elements (Basic Stuff)
 
